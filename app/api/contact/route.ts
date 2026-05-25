@@ -55,9 +55,11 @@ async function createZohoContact(fields: {
     }
   );
 
+  const result = await res.json();
+  console.log("Zoho response:", JSON.stringify(result));
+
   if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Zoho API error: ${err}`);
+    throw new Error(`Zoho API error: ${JSON.stringify(result)}`);
   }
 }
 
