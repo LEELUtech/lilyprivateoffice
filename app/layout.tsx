@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "The Private Office — Lily Chystofat",
   description: "Individuated operational intelligence for the architects of industry, legacy, and institution.",
+  icons: {
+    icon: "/assets/path6-logo.svg",
+  },
 };
 
 export const viewport: Viewport = {
