@@ -1,6 +1,28 @@
 runConfig:
   runtime: nodejs20
-  cpu: 1
-  memoryMiB: 512
-  minInstances: 1
-  maxInstances: 2
+  maxInstances: 1
+
+env:
+  # Zoho CRM — from Secret Manager
+  - variable: ZOHO_CLIENT_ID
+    secret: ZOHO_CLIENT_ID_LILYCHYSTOFAT
+  - variable: ZOHO_CLIENT_SECRET
+    secret: ZOHO_CLIENT_SECRET_LILYCHYSTOFAT
+  - variable: ZOHO_REFRESH_TOKEN
+    secret: ZOHO_REFRESH_TOKEN_CRM_LILYCHYSTOFAT
+
+  # SMTP — from Secret Manager
+  - variable: SMTP_USER
+    secret: SENDING_EMAIL
+  - variable: SMTP_PASS
+    secret: SENDING_PASSWORD
+  - variable: CONTACT_EMAIL_TO
+    value: mykola.tyshchenko@bndigital.co
+
+  # SMTP — plain config
+  - variable: SMTP_HOST
+    value: smtp.gmail.com
+  - variable: SMTP_PORT
+    value: "587"
+  - variable: SMTP_SECURE
+    value: "false"
