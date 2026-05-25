@@ -17,7 +17,7 @@ env:
   - variable: SMTP_PASS
     secret: SENDING_PASSWORD
   - variable: CONTACT_EMAIL_TO
-    value: mykola.tyshchenko@bndigital.co
+    value: Lily.chystofat@leelutech.com, don.defosset@leelutech.com
 
   # SMTP — plain config
   - variable: SMTP_HOST
