@@ -1,0 +1,6 @@
+runConfig:
+  runtime: nodejs20
+  cpu: 1
+  memoryMiB: 512
+  minInstances: 1
+  maxInstances: 2
