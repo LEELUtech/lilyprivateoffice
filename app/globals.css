@@ -299,7 +299,7 @@ body {
   width: 100%;
   overflow: visible;
   z-index: 2;
-  background: url('/assets/lily_vip.jpg') no-repeat left center / cover;
+  background: url('/assets/lily-photo-skyline.jpg') no-repeat center center / cover;
 }
 
 .lily-bio-inner {
@@ -1260,7 +1260,7 @@ select.contact-input option { background: #17202b; color: #f1e9db; }
   .hero-copy-accent { font-size: 22px; text-align: center; }
   .lily-bio { background: none; }
   .lily-bio-inner { height: auto; display: flex; flex-direction: column; }
-  .lily-bio-photo-bg { position: relative; top: auto; left: auto; height: 400px; width: 100%; background-position: -50px top; }
+  .lily-bio-photo-bg { display: block; position: relative; top: auto; left: auto; height: 400px; width: 100%; background: url('/assets/lily-photo-skyline.jpg') no-repeat -50px top / cover; }
   .lily-bio-card { position: relative; top: auto; right: auto; transform: none; width: calc(100% - 40px); margin: -60px auto 0; padding: 32px 24px 40px; border-radius: 16px; }
   .lily-bio-logo { width: 70px; height: 88px; margin-bottom: 16px; }
   .lily-bio-text .bio-name { font-size: 26px; line-height: 48px; }
